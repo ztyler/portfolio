@@ -58,7 +58,7 @@ img.center {
     flex-wrap: wrap;
 }
 
-.col-1 {
+.border {
     width: 8.33%;
 }
 
@@ -74,7 +74,11 @@ img.center {
     width: 33.33%;
 }
 
-.col-5 {
+.col-left-top {
+    width: 41.67%;
+}
+
+.col-right-top {
     width: 41.67%;
 }
 
@@ -108,7 +112,7 @@ img.center {
 
 @media only screen and (max-width: 700px) {
     img.logo {
-        visibility: hidden;
+        display: none;
     }
 
     h1 {
@@ -129,11 +133,19 @@ img.center {
         width: 100%;
     }
 
-    .col-1 {
+    .border {
         width: 0%;
     }
 
     .col-4 {
+        width: 100%;
+    }
+
+    .col-left-top {
+        width: 0%;
+    }
+
+    .col-right-top {
         width: 100%;
     }
 
