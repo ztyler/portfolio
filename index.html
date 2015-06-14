@@ -2,27 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zachary Tyler</title>
+    <link href='http://fonts.googleapis.com/css?family=Orbitron:400,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
+
       <div class="row">
-        <div class="col-md-6"><img src="index_files/100x100.png" class="img-responsive" alt="Page Logo"></div>
-        <div class="col-md-6 text-right text-uppercase">
-          <h1>Zachary Tyler</h1>
-          <h4>Front-end Ninja</h4>
+        <div class="col-md-6"><img src="resources/logo.png" class="img-responsive logo" alt="Page Logo">
+        </div>
+        <div class="col-md-6">
+          <h1 class="title-super text-uppercase">Zachary Tyler</h1>
+          <h4>A Madman with a Computer</h4>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <hr>
+          <hr style="border-top: 4px solid #666">
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12"><img src="index_files/1140x350.png" class="img-responsive" alt="Banner Image">
+        <div class="col-md-12"><img src="resources/center.jpg" class="img-responsive center" alt="Banner Image">
         </div>
       </div>
       <div class="row">
@@ -30,24 +34,96 @@
           <h2>Featured Work</h2>
         </div>
       </div>
-      <div class="row">
+
+      <div class="row text-center">
         <div class="col-md-4">
-          <img src="index_files/555x300.png" class="img-responsive" alt="First Feature">
-          <h3 class="text-uppercase">Appify</h3>
-          <p><a href="http://github.com/">Link to project</a></p>
+          <a class="btnthumbnail" data-target="#GitHubModal" data-toggle="modal" href="#"><img src="resources/github.png" class="img-responsive feature" alt="First Feature"></a>
+          <p><h3>GitHub</h3></p>
         </div>
+
         <div class="col-md-4">
-          <img src="index_files/555x300.png" class="img-responsive" alt="Second Feature">
-          <h3 class="text-uppercase">Appify</h3>
-          <p><a href="http://github.com/">Link to project</a></p>
+          <a class="btnthumbnail" data-target="#CodeEvalModal" data-toggle="modal" href="#"><img src="resources/code.jpg" class="img-responsive feature" alt="Second Feature"></a>
+          <p><h3>Code Eval</h3></p>
         </div>
+
         <div class="col-md-4">
-          <img src="index_files/555x300.png" class="img-responsive" alt="Third Feature">
-          <h3 class="text-uppercase">Appify</h3>
-          <p><a href="http://github.com/">Link to project</a></p>
+          <a class="btnthumbnail" data-target="#MusicModal" data-toggle="modal" href="#"><img src="resources/btbam.png" class="img-responsive feature" alt="Third Feature"></a>
+          <p><h3>Music</h3></p>
+        </div>
+      </div><!--close last row-->
+
+    </div><!--close container-->
+
+    <div class="modal fade" id="GitHubModal"> <!--first modal-->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-center">GitHub</h3>
+          </div>
+          <div class="modal-body">
+            <img src="resources/github.png" class="img-responsive feature" alt="GitHub logo">
+            <hr style="border-top: 2px solid #666">
+            <p>
+              My GitHub contains a bit of my classwork. Most of it's in Java, some of it's in HTML, and if you dig far enough, you'll find some Python. More personalized work will be added in the future.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn" onclick="window.open('https://github.com/ztyler','_blank');" data-dismiss="modal">Continue</button>
+          </div>
         </div>
       </div>
     </div>
 
-  
-</body></html>
+    <div class="modal fade" id="CodeEvalModal"> <!--second modal-->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-center">Code Eval</h3>
+          </div>
+          <div class="modal-body">
+            <img src="resources/code.jpg" class="img-responsive feature" alt="Code image">
+            <hr style="border-top: 2px solid #666">
+            <p>
+              Code Eval is a great place to practice coding. It supports a lot of different languages and gives you small puzzles to solve. After each puzzle, you're rated on the size and execution time of your code, which is then factored into your overall ranking. Great for rainy days.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn" onclick="window.open('https://www.codeeval.com/profile/ztyler/','_blank');" data-dismiss="modal">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="MusicModal"> <!--third modal-->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-center">Music</h3>
+          </div>
+          <div class="modal-body">
+            <img src="resources/btbam.png" class="img-responsive feature" alt="Music image">
+            <hr style="border-top: 2px solid #666">
+            <p>
+              I love all kinds of music, but my absolute favorite genres are heavy metal, jazz, and hip-hop. Here's a short list with some links to some of my favorite artists:
+              <ul>
+                <li><a href="http://www.betweentheburiedandme.com/" target="_blank">Between the Buried and Me</a></li>
+                <li><a href="https://www.youtube.com/watch?v=NmfzWpp0hMc" target="_blank">Animals as Leaders</a></li>
+                <li><a href="http://www.metalblade.com/trioscapes/" target="_blank">Trioscapes</a></li>
+                <li><a href="https://www.youtube.com/watch?v=AtDEmtwuTlI" target="_blank">Mr. Bungle</a></li>
+                <li><a href="https://cunninlynguists.bandcamp.com/" target="_blank">Cunninlynguists</a></li>
+              </ul>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
